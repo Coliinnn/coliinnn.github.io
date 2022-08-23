@@ -1,7 +1,9 @@
-$brand-color:         #fede00;
+$brand-color:         #F3AC47;
 $highlight:           lighten($brand-color, 35%);
-$text-color:          #0b0404;
-$muted-text-color:    #64644B;
+$text-color:          #0b0404;  // brownish
+// $text-color:          #2E3A35;  // dark green
+// $muted-text-color:    #64644B; // lighter green
+$muted-text-color:    #2E3A35;  // dark green
 $font-family:         "EB Garamond", Garamond, "Times New Roman", serif;
 
 $on-bigphone:         375px;
