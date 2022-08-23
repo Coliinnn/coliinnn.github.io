@@ -18,10 +18,11 @@ email: contact@colinganzevoort.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Psychology, Research, & Technology.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://patdryburgh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://coliinnn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png
 twitter_username: colinowg
 github_username:  coliinnn
+hide_credits: true
 
 # Build settings
 markdown: kramdown
@@ -41,5 +42,5 @@ markdown: kramdown
 plugins:
   - jekyll-paginate
 
-paginate: 3
+paginate: 20
 paginate_path: "/page/:num/"
