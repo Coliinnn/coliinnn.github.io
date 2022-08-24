@@ -24,6 +24,9 @@ twitter_username: colinowg
 github_username:  coliinnn
 hide_credits: true
 hide_search: true
+page_excerpts: true
+
+permalink: /:categories/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
@@ -43,5 +46,5 @@ markdown: kramdown
 plugins:
   - jekyll-paginate
 
-paginate: 20
+paginate: 3
 paginate_path: "/page/:num/"

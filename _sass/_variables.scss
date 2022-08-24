@@ -1,12 +1,19 @@
 $brand-color:         #F3AC47;
 $highlight:           lighten($brand-color, 35%);
-$text-color:          #0b0404;  // brownish
-// $text-color:          #2E3A35;  // dark green
-// $muted-text-color:    #64644B; // lighter green
-$muted-text-color:    #2E3A35;  // dark green
+$text-color:          #0b0404;
+$muted-text-color:    #24342F;
 $font-family:         "EB Garamond", Garamond, "Times New Roman", serif;
 
 $on-bigphone:         375px;
 $on-tablet:           768px;
 $on-laptop:           960px;
 $on-desktop:          1200px;
+
+// Dark green: 24342F
+// Dark yellow: F3AC47
+
+// Lighter green: 64644B (default muted-text-color)
+// Brown: 0b0404 (default text-color)
+
+// Testing some colour pallettes
+// Beige: D7CEC7
