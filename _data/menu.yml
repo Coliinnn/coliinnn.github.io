@@ -1,8 +1,8 @@
-- title: About
-  url: /about
-
 - title: Work
   url: /work
+
+- title: CV
+  url: /cv
 
 - title: Blog
   url: /blog

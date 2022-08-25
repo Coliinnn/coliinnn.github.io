@@ -7,6 +7,7 @@ layout: default
 {% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
   {% include back-link.html %}
 {% else %}
+
   <header class="site-masthead">
     {% include menu.html %}
     {% if site.title %}
@@ -14,6 +15,7 @@ layout: default
         {{ site.title }}
       </h1>
     {% endif %}
+
     {% if site.title %}
       <h2>
         {{ site.description }}
@@ -24,17 +26,16 @@ layout: default
 
 <main class="home" id="main" role="main" aria-label="Content">
 
-  <h1 class="content-title divided">
-    Introduction
-  </h1>
+  {{ content }}
 
   {% for page in site.pages %}
-  {% if page.name == "about.md" %}
+    {% if page.name == "about.md.temp-disabled" %}
 
-  {{ page.excerpt }}
-  <a href="{{ page.url }}">Read More</a>
+      {{ page.excerpt }}
 
-  {% endif %}
+      <a href="{{ page.url }}">Read More</a>
+
+    {% endif %}
   {% endfor %}
 
 
