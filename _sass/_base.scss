@@ -6,6 +6,7 @@ body {
   line-height: 1.5;
 }
 
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
 @media (prefers-color-scheme: dark) {
 	body {
     background: $brand-color-dark;
@@ -66,8 +67,22 @@ a {
   color: $text-color;
 }
 
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
+@media (prefers-color-scheme: dark) {
+  a {
+    color: $text-color-dark;
+  }
+}
+
 a:focus {
   outline: 1px dashed $text-color;
+}
+
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
+@media (prefers-color-scheme: dark) {
+  a:focus {
+    outline: 1px dashed $text-color-dark;
+  }
 }
 
 blockquote {

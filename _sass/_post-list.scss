@@ -31,6 +31,9 @@
     .post-date {
       margin-left: auto;
     }
+  @media (prefers-color-scheme: dark) { // Added from https://derekkedziora.com/blog/dark-mode-revisited
+    color: $text-color-dark;
+    }
   }
 }
 
