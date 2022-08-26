@@ -14,8 +14,8 @@
 
     <link rel="favicon" href="{{ site.icon }}">
 
-    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-      {%- include google-analytics.html -%}
+    {%- if jekyll.environment == 'production' -%}
+      <script async defer data-website-id="b28401a8-46d9-41d6-8644-4dbb63937870" src="https://umami.colinganzevoort.nl/umami.js"></script>
     {%- endif -%}
 
   </head>
