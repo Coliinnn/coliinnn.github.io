@@ -1,9 +1,19 @@
 .post {
-  background: white;
+  background: $post-background;  // background in posts
   margin: 2em auto;
   max-width: 60rem;
   padding: 2em 0;
   box-shadow: 12px 18px 24px rgba(darken($brand-color, 50%), .1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post {
+    background: $post-background-dark;  // background in posts
+    margin: 2em auto;
+    max-width: 60rem;
+    padding: 2em 0;
+    box-shadow: 12px 18px 24px rgba(darken($brand-color-dark, 50%), .1);
+  }
 }
 
 .post > * {
@@ -33,6 +43,12 @@
 
 .post a:hover {
   background: $highlight;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post a:hover {
+    background: $highlight-dark;
+  }
 }
 
 .post dl,

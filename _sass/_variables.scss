@@ -1,15 +1,18 @@
-$brand-color:         #F2EBE2;  // Beige
-$brand-color-dark:    #333;     // And 444 for the blog posts
-$highlight:           lighten($brand-color, 35%);
-$text-color:          #0b0404;  // Brownish
-$text-color-dark:     #bbb;     // Greyish
-$muted-text-color:    #e8bd30;  // Yellow
-$font-family:         "EB Garamond", Garamond, "Times New Roman", serif;
+$brand-color:          #F2EBE2;  // Beige
+$brand-color-dark:     #333;     // And 444 for the blog posts
+$post-background:      #FFFF;
+$post-background-dark: #444;
+$highlight:            lighten($brand-color, 35%);
+$highlight-dark:       lighten($brand-color-dark, 35%);
+$text-color:           #0b0404;  // Brownish
+$text-color-dark:      #bbb;     // Greyish
+$muted-text-color:     #e8bd30;  // Yellow
+$font-family:          "EB Garamond", Garamond, "Times New Roman", serif;
 
-$on-bigphone:         375px;
-$on-tablet:           768px;
-$on-laptop:           960px;
-$on-desktop:          1200px;
+$on-bigphone:          375px;
+$on-tablet:            768px;
+$on-laptop:            960px;
+$on-desktop:           1200px;
 
 // Dark green: 24342F
 // Dark yellow: F3AC47
