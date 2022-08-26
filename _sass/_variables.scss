@@ -3,7 +3,7 @@ $brand-color-dark:     #333;     // And 444 for the blog posts
 $post-background:      #FFFF;
 $post-background-dark: #444;
 $highlight:            lighten($brand-color, 35%);
-$highlight-dark:       lighten($brand-color-dark, 35%);
+$highlight-dark:       #444;
 $text-color:           #0b0404;  // Brownish
 $text-color-dark:      #bbb;     // Greyish
 $muted-text-color:     #e8bd30;  // Yellow
