@@ -21,6 +21,15 @@
   margin: 4em auto;
 }
 
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
+@media (prefers-color-scheme: dark) {
+  .footnotes::before {
+    content: '';
+    @include divider-darkmode;
+    margin: 4em auto;
+  }
+}
+
 .footnotes {
   margin-bottom: 4em;
 }

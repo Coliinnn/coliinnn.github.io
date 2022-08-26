@@ -113,6 +113,16 @@ hr {
   margin: 4em 0;
 }
 
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
+@media (prefers-color-scheme: dark) {
+  hr {
+    border: 0;
+    height: 0;
+    @include divider-darkmode;
+    margin: 4em 0;
+  }
+}
+
 img {
   display: flex;
   max-width: 100%;
@@ -135,6 +145,14 @@ figcaption {
 .divided::after {
   content: "";
   @include divider;
+}
+
+// Added from https://derekkedziora.com/blog/dark-mode-revisited
+@media (prefers-color-scheme: dark) {
+  .divided::after {
+    content: "";
+    @include divider-darkmode;
+  }
 }
 
 .home {
