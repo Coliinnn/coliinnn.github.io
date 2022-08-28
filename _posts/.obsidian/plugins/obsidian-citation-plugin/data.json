@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "biblatex",
+  "literatureNoteTitleTemplate": "@{{citekey}}",
+  "literatureNoteFolder": "2 Literature notes",
+  "literatureNoteContentTemplate": "---\ncitekey: {{citekey}}\nauthors: {{authorString}}\ntitle: {{title}}\nyear: {{year}}\nzotero: {{zoteroSelectURI}}\ntags: literature-note\ndate created:\n---\n\n# {{citekey}} - {{title}}\n\n## Summary {{citekey}}\nMain summary/statement of the text\n\n### Methods\n\n---\n\n## Key ideas {{citekey}}\n### {{citekey}} and Key Idea\nTheme-based summary of the paper for each key idea.",
+  "markdownCitationTemplate": "{{citekey}} - *{{title}}*",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": "/Users/colin/Library/Mobile Documents/iCloud~md~obsidian/Documents/academia/_attachments/My Zotero Library.bib"
+}

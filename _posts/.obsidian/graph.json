@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#permanent-note",
+      "color": {
+        "a": 1,
+        "rgb": 5401056
+      }
+    },
+    {
+      "query": "tag:#self-transcendence",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "tag:#awe",
+      "color": {
+        "a": 1,
+        "rgb": 10868316
+      }
+    },
+    {
+      "query": "tag:#meaning",
+      "color": {
+        "a": 1,
+        "rgb": 14064988
+      }
+    },
+    {
+      "query": "tag:#meeting",
+      "color": {
+        "a": 1,
+        "rgb": 11230422
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.427083333333333,
+  "repelStrength": 11.5404647435897,
+  "linkStrength": 0.858173076923077,
+  "linkDistance": 241,
+  "scale": 1.8271922427027336,
+  "close": true
+}

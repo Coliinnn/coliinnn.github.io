@@ -1,0 +1,24 @@
+{
+  "foldHeading": true,
+  "showLineNumber": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": false,
+  "attachmentFolderPath": "_attachments",
+  "legacyEditor": false,
+  "livePreview": false,
+  "readableLineLength": true,
+  "strictLineBreaks": true,
+  "foldIndent": true,
+  "lineWrap": true,
+  "pdfExportSettings": {
+    "pageSize": "A5",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "spellcheck": true,
+  "showFrontmatter": true,
+  "fileSortOrder": "alphabetical"
+}

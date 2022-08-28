@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "6dbb588b0f57d91f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b3bf1a13890ba76",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "2022-08-24-a-new-website.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "068c2b8bfe54728c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ed609e6b3459ab2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "837f10cba9b6ca35",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "90d2f07d9913e6dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8dd3f50d4ca8d160",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "a6f49abc7eb2aa51",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265
+  },
+  "right": {
+    "id": "9e7dcf1cf53c2c5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "24c173cebff251d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e705430428c09ba9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2022-08-24-a-new-website.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "39fe32e060e0b8ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2022-08-24-a-new-website.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "10ad39f6d4bda0fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "85c529e383389405",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2022-08-24-a-new-website.md"
+              }
+            }
+          },
+          {
+            "id": "983b5bf8dc25e3dc",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8b3bf1a13890ba76",
+  "lastOpenFiles": [
+    "2017-10-17-de-nieuwe-week.md",
+    "2017-10-19-de-competenties-en-leerdoelen-van-cmd.md",
+    "2022-01-12-importing-itunes-play-history-into-lastfm.md",
+    "2022-03-15-transforming-a-university-pc-to-my-new-homelab.md",
+    "2022-08-24-a-new-website.md",
+    "2016-05-29-the-2016-macbook-pro.md",
+    "2017-10-15-deadline-verschoven.md",
+    "2017-10-04-kennismaken-pressure-cooker-en-solliciteren.md",
+    "2017-10-02-gesprek-met-de-opdrachtgever.md",
+    "2017-09-27-mijn-eerste-week-in-de-hoofdfase.md"
+  ]
+}
