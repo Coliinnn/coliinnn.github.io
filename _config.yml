@@ -14,13 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Colin Ganzevoort
-email: contact@colinganzevoort.nl
+email: website-dnL2LQ@colinganzevoort.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Psychology, Research, & Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://colinganzevoort.nl" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png
 twitter_username: colinowg
+linkedin_username: colinganzevoort
 github_username:  coliinnn
 hide_credits: true
 hide_search: true
@@ -45,6 +46,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-paginate
+  - jekyll-email-protect
 
 paginate: 3
 paginate_path: "/page/:num/"

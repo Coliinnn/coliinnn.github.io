@@ -10,3 +10,6 @@ gem "jekyll"
 
 # https://stackoverflow.com/questions/65989040/bundle-exec-jekyll-serve-cannot-load-such-file
 gem "webrick"
+
+# https://github.com/vwochnik/jekyll-email-protect
+gem 'jekyll-email-protect'
