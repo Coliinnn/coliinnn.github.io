@@ -47,6 +47,7 @@ markdown: kramdown
 plugins:
   - jekyll-paginate
   - jekyll-email-protect
+  - jekyll-sitemap
 
 paginate: 3
 paginate_path: "/page/:num/"
