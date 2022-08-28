@@ -14,12 +14,19 @@ code.highlighter-rouge {
   font-size: .875em;
   margin: 2rem auto;
 
-  > * {
+  > .highlight {
     padding: 0 1.5rem;
+    overflow-x: scroll;
   }
 
   .highlighter-rouge & {
-    background: $highlight;
+    background: #bbb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .highlighter-rouge & {
+      background: #4f4f4f;
+    }
   }
 
   .c     { color: #998; font-style: italic } // Comment
