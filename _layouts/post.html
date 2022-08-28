@@ -10,9 +10,6 @@ layout: default
 
 <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
 
-  {% capture time %}{{ content | reading_time }}{% endcapture %}
-<p>This article will take {{ time }} minute(s) to read.</p>
-
   {% if page.title != "" %}
     <h1 class="post-title divided p-name" itemprop="name headline">
       {{ page.title }}
