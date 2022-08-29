@@ -9,7 +9,7 @@ categories: blog
 
 ##### Gesprekken met docenten over leerdoelen, de loop van het project en meer
 
-Een belangrijk onderdeel van de opleiding zijn de gesprekken (“consults”) met de docenten. Omdat er relatief weinig contacturen zijn moet je zelf zorgen voor afspreken met de docenten als je vragen wilt stellen. Vaak kan dit gewoon via een berichtje op WhatsApp, maar sommige docenten hebben liever dat je de website van de opleiding gebruikt of een e-mail stuurt om een afspraak te maken. Dit geldt allemaal net zozeer in de hoofdfase als in het propedeuse jaar.
+<p class="dropcap">Een belangrijk onderdeel van de opleiding zijn de gesprekken (“consults”) met de docenten. Omdat er relatief weinig contacturen zijn moet je zelf zorgen voor afspreken met de docenten als je vragen wilt stellen. Vaak kan dit gewoon via een berichtje op WhatsApp, maar sommige docenten hebben liever dat je de website van de opleiding gebruikt of een e-mail stuurt om een afspraak te maken. Dit geldt allemaal net zozeer in de hoofdfase als in het propedeuse jaar.</p>
 
 Eerst hadden we gesprekken met Jeroen en Stephan over de loop van het project en hoe we het beste verder konden gaan. De docenten zeiden beiden dat het opstarten van een project vaker erg moeizaam is en dat wat er bij ons gebeurde niet heel vreemd was. Pas later in het project begint het vaak een stuk duidelijk te worden.
 
