@@ -10,15 +10,15 @@ layout: default
 
   <header class="site-masthead">
     {% include menu.html %}
-    {% if site.title %}
+    {% if site.homepage_title %}
       <h1>
-        {{ site.title }}
+        {{ site.homepage_title }}
       </h1>
     {% endif %}
 
-    {% if site.description %}
+    {% if site.homepage_description %}
       <h2>
-        {{ site.description }}
+        {{ site.homepage_description }}
       </h2>
     {% endif %}
   </header>

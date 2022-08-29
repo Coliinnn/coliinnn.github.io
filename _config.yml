@@ -13,10 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Colin Ganzevoort
+title: Colin Ganzevoort — Psychology, Research, & Technology
+homepage_title: Colin Ganzevoort
+homepage_description: Psychology, Research, & Technology
 email: website-dnL2LQ@colinganzevoort.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  Psychology, Research, & Technology
+  I am a Research Master student at the University of Groningen (RUG), specialising in Mental Health and Clinical Psychology. Find more details about me and my work on this website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://colinganzevoort.nl" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png

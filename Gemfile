@@ -16,8 +16,5 @@ gem "webrick"
 # https://github.com/vwochnik/jekyll-email-protect
 gem 'jekyll-email-protect'
 
-# https://github.com/bdesham/reading_time
-gem 'liquid_reading_time'
-
 # https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
