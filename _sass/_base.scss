@@ -211,3 +211,11 @@ p.dropcap::first-letter {
       margin: 0 .1em 0 0;
       line-height: 0.85;
     }
+
+// Estimated Reading Time
+.ert {
+  font-size: 1em;
+  font-style: italic;
+  margin: 2em auto;
+  text-align: center;
+}
