@@ -18,3 +18,6 @@ gem 'jekyll-email-protect'
 
 # https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
+
+# https://github.com/lazee/premonition
+gem 'premonition'

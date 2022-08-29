@@ -46,10 +46,11 @@ markdown: kramdown
 #   - vendor/gems/
 #   - vendor/ruby/
 
-plugins:
+plugins:  # Also add these to the Gemfile. Then install with 'bundle'
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-sitemap
+  - premonition
 
 paginate: 3
 paginate_path: "/page/:num/"
