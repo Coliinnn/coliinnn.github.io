@@ -11,9 +11,7 @@ categories: blog
 
 The people that I was with were mostly interested in the monitors. Of course; normally, I would have been, too. However, just a few months ago I started tinkering with a Raspberry Pi 4 and I found myself increasingly often browsing the [homelab](https://www.reddit.com/r/homelab/){:target="_blank"} and [self-hosted](https://www.reddit.com/r/selfhosted/){:target="_blank"} subreddits. The people on these subreddits often show off systems that are not even remotely comparable to a Raspberry Pi, but the Raspberry nevertheless offers a respectable way to start experimenting with Linux, Docker, programming, systems administration, and networking.
 
-> citation ""
 > "The Raspberry Pi offers a respectable way to start experimenting with Linux, Docker, programming, systems administration, and networking."
-
 
 However, I soon ran into the the limits of the Raspberry Pi, mostly as a result of the ARM chip and the 2GB of RAM that mine was equipped with. Within the homelab communities, I had often seen people recommend Small Form Factor computers because they are relatively small, whilst the x86 CPU offers a whole lot more power than an ARM chip. And so I started looking online for these SFF computers. The search did not last long, for I found myself in that very hallway in the library of my faculty; no two weeks after starting to look for a new computer.
 
