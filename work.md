@@ -3,7 +3,7 @@ layout: page
 title: My Work
 ---
 
-### On-going Projects
+### Ongoing Projects
 &emsp;&ensp;**September, 2022 - July, 2023: Master's Thesis**.  Currently, I am working on my Master's Thesis, which focuses on intensive and personalised exposure and response prevention (ERP) for children and young persons with obsessive-compulsive disorder (OCD). The research consists of a single-case experimental design ([SCED](https://en.wikipedia.org/wiki/Single-subject_design){:target="_blank"}), with which we hope to discover whether such an intensive treatment results in improved symptomatology for these children.
 
 **September, 2022 - July, 2023: Systematic Reviews**. Additionally, I am also working on a systematic review regarding treatments for children and young persons for whom previous treatments were unsuccessful, and another systematic review regarding existing intensive treatments that have been used with children and young persons with OCD.
