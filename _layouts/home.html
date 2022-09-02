@@ -38,7 +38,6 @@ layout: default
     {% endif %}
   {% endfor %}
 
-
   <h1 class="content-title divided">
     {% if site.paginate and site.paginate_path and paginator.page > 1 %}
       <!-- Page {{ paginator.page }} -->
@@ -48,42 +47,44 @@ layout: default
     {% endif %}
   </h1>
 
+ <div class="blog-posts-list">
+    {% if site.paginate and site.paginate_path %}
 
-  {% if site.paginate and site.paginate_path %}
+      <ul class="post-list">
+        {% for post in paginator.posts %}
+          {% include post-list-item.html %}
+        {% endfor %}
+      </ul>
 
-    <ul class="post-list">
-      {% for post in paginator.posts %}
-        {% include post-list-item.html %}
-      {% endfor %}
-    </ul>
+      {% if paginator.total_pages > 1 %}
 
-    {% if paginator.total_pages > 1 %}
+        <div class="post-pagination">
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl  }}" class="pagination-next btn">&lang;&nbsp;Older</a>
+            <a href="javascript:updateDiv();">updateDiv</a>
+          {% else %}
+            <span>&nbsp;</span>
+          {% endif %}
+          <span class="pagination-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
+          {% else %}
+            <span>&nbsp;</span>
+          {% endif %}
+        </div>
 
-      <div class="post-pagination">
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl  }}" class="pagination-next btn">&lang;&nbsp;Older</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
-        <span class="pagination-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
-      </div>
+      {% endif %}
+
+    {% else %}
+
+      <ul class="post-list">
+        {% for post in site.posts %}
+          {% include post-list-item.html %}
+        {% endfor %}
+      </ul>
 
     {% endif %}
-
-  {% else %}
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        {% include post-list-item.html %}
-      {% endfor %}
-    </ul>
-
-  {% endif %}
+  </div>
 
 
 </main>
