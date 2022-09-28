@@ -7,7 +7,10 @@ $highlight-dark:       #444;
 $text-color:           #0b0404;  // Brownish
 $text-color-dark:      #bbb;     // Greyish
 $muted-text-color:     #E8BD30;  // Yellow
-$font-family:          "EB Garamond", Garamond, "Times New Roman", serif;
+$headings-font-family: "Playfair Display", Garamond, "Times New Roman", serif;
+$body-font-family:     "EB Garamond", Garamond, "Times New Roman", serif;
+
+$body-font-size:       1.3125em; // Good for EB Garamond, not for Playfair Display
 
 $on-bigphone:          375px;
 $on-tablet:            768px;
