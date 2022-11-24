@@ -3,6 +3,6 @@ layout: page
 title: Curriculum Vitae
 ---
 
-My CV can be downloaded here: [CV Colin Ganzevoort, 2022](/assets/CV-Colin-Ganzevoort-2022.pdf)
+<p>My CV can be downloaded here: <a href="/assets/CV-Colin-Ganzevoort-2022.pdf" class="button umami--click--download-cv">CV Colin Ganzevoort, 2022</a></p>
 
-You may also be interested to visit [this page](/work) or [my LinkedIn](https://linkedin.com/in/colinganzevoort){:target="_blank"}, where more detailed information regarding my current and previous positions can be found.
+<p>You may also be interested to visit <a href="/work">this page</a> or <a href="https://linkedin.com/in/colinganzevoort" target="_blank" class="button umami--click--linkedin">my LinkedIn</a>, where more detailed information regarding my current and previous positions can be found.</p>
