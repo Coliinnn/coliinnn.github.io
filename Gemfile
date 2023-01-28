@@ -21,3 +21,6 @@ gem 'jekyll-sitemap'
 
 # https://github.com/lazee/premonition
 gem 'premonition'
+
+# https://github.com/helaili/jekyll-action/issues/150
+gem "jekyll-sass-converter", "~> 2.0"
