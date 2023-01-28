@@ -5,22 +5,22 @@
   </ul>
 
 <div class="row">
-    <a href="mailto:{{ site.email | encode_email }}"><picture>
+    <a href="mailto:{{ site.email | encode_email }}" class="button umami--click--mail"><picture>
       <source srcset="/assets/images/icon-mail-darkmode.png" media="(prefers-color-scheme: dark)">
         <img src="/assets/images/icon-mail.png" alt="Mail" width="25" height="25">
     </picture></a>
 
-    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank""><picture>
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank" class="button umami--click--linkedin"><picture>
       <source srcset="/assets/images/icon-linkedin-darkmode.png" media="(prefers-color-scheme: dark)">
         <img src="/assets/images/icon-linkedin.png" alt="LinkedIn" width="25" height="25">
     </picture></a>
 
-    <a href="https://twitter.com/{{ site.twitter_username }}/" target="_blank"><picture>
+    <a href="https://twitter.com/{{ site.twitter_username }}/" target="_blank" class="button umami--click--twitter"><picture>
       <source srcset="/assets/images/icon-twitter-darkmode.png" media="(prefers-color-scheme: dark)">
         <img src="/assets/images/icon-twitter.png" alt="Twitter" width="25" height="25">
     </picture></a>
 
-    <a rel="me" href="{{ site.mastodon_url }}" target="_blank"><picture>
+    <a rel="me" href="{{ site.mastodon_url }}" target="_blank" class="button umami--click--mastodon"><picture>
       <source srcset="/assets/images/icon-mastodon-darkmode.png" media="(prefers-color-scheme: dark)">
         <img src="/assets/images/icon-mastodon.png" alt="Twitter" width="25" height="25">
     </picture></a>
