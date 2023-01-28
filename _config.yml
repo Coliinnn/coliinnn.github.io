@@ -46,7 +46,7 @@ markdown: kramdown
 #   - vendor/gems/
 #   - vendor/ruby/
 
-plugins:  # Also add these to the Gemfile. Then install with 'bundle'
+plugins:  # Also add these to the Gemfile. Then install with 'bundle'. Github errors? Do `bundle update`.
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-sitemap
