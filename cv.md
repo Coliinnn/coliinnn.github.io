@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Curriculum Vitae
+last-updated: 09-04-2023
 ---
 
 <p>My CV can be downloaded here: <a href="/assets/CV-Colin-Ganzevoort-2023.pdf" class="button umami--click--download-cv">CV Colin Ganzevoort, 2023</a></p>

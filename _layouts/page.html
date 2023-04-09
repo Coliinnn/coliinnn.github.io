@@ -13,6 +13,12 @@ layout: default
   {% if page.title != "" %}
   <h1 class="post-title divided p-name" itemprop="name headline">
       {{ page.title }}
+
+      {% if page.last-updated != "" %}
+        <center><small><small><small><span class="ert">
+          Last updated: {{ page.last-updated }}
+        </span></small></small></small></center>
+      {% endif %}
   </h1>
   {% endif %}
 
