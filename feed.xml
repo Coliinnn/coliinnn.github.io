@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colin Ganzevoort — Psychology, Research, &amp; Technology</title>
+    <description>I am a Research Master student at the University of Groningen (RUG), specialising in Mental Health and Clinical Psychology. Find more details about me and my work on this website.</description>
+    <link>https://colinganzevoort.nl/</link>
+    <atom:link href="https://colinganzevoort.nl/feed/index.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Oct 2023 18:02:58 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2023 18:02:58 +0000</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
+    
+      
+        <item>
+          
+            <title>A new website</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;p class=&quot;dropcap&quot;&gt;Hello! If you're reading this, you probably found my new website. Although I've had my domain name for many years now, I really only used it for my custom e-mail. I did have a server running somewhere to display a very simple web page, but it contained no more than two words and a hyperlink to my LinkedIn profile.&lt;/p&gt;
+
+&lt;p&gt;Since &lt;a href=&quot;/blog/2022/03/15/transforming-a-university-pc-to-my-new-homelab&quot;&gt;I got a new homelab just months ago&lt;/a&gt;, I have entertained the thought of making a new website for myself, that could serve as an extension of my professional CV, but also as a personal blog (&lt;a href=&quot;https://twitter.com/PatrickBloniasz/status/1553767390109962240&quot; target=&quot;_blank&quot;&gt;Why have a personal website in the first place? See this excellent Twitter thread&lt;/a&gt;). I have previously experimented with some blog writing, though I never did have a good platform to publish them. Before building the website, however, I had to decide for myself what kind of website I wanted and which tools would best suit my needs. There were several options that I could go with.&lt;/p&gt;
+
+&lt;p&gt;First, I considered going with &lt;a href=&quot;https://wordpress.org/&quot; target=&quot;_blank&quot;&gt;Wordpress&lt;/a&gt;. &lt;a href=&quot;https://dezeilmakerij.frl/&quot; target=&quot;_blank&quot;&gt;I have built a Wordpress website before for a client&lt;/a&gt;, and knew of its customisability with different themes and plugins. However, Wordpress seems to be quickly losing its charm, due to its &lt;a href=&quot;https://www.makeuseof.com/is-wordpress-still-worth-using/&quot; target=&quot;_blank&quot;&gt;heavy use of resources and the status that it has gained as an outdated software that is frequently targeted by hackers&lt;/a&gt;. I am also not at very familiar with PHP and found it difficult to customise plugins and themes themselves in order to get the rather specific result that I was often looking for.&lt;/p&gt;
+
+&lt;p&gt;Then, I considered &lt;a href=&quot;https://ghost.org/&quot; target=&quot;_blank&quot;&gt;Ghost&lt;/a&gt; as alternative, as I had heard much about it and it seemed a lot more modern, secure and fast than Wordpress. It is also a platform that is inherently dedicated to blogging and growing your audience. Getting Ghost up and running on my own server was however not as easy I had hoped. Immediately, the install process was finicky, and I did not like that I needed a separate Docker container for the (rather resource-heavy) MySQL database. With the limited resources that my homelab currently has, I need to make conscious decisions about the applications that I do and do not want to run.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot-ghost-db-resources.png&quot; alt=&quot;Ghost resource usage&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The Ghost database is one of the most resource-intensive containers on my system&lt;/figcaption&gt;
+
+&lt;p&gt;Next, I found some information about &lt;a href=&quot;https://www.cloudflare.com/en-gb/learning/performance/static-site-generator/&quot; target=&quot;_blank&quot;&gt;Static Site Generators&lt;/a&gt;. This was perfect and exactly what I was looking for. No databases, no comments; only super-fast performance, whilst still allowing for themes, plugins, and customisation, and still not requiring me to code each and every page individually. &lt;em&gt;The static site generator truly does feel like the best of both worlds.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I ended up having to decide between two last options: Hugo and Jekyll. &lt;a href=&quot;https://gohugo.io/&quot; target=&quot;_blank&quot;&gt;Hugo&lt;/a&gt; is the newer of the two, whereas &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; has existed since 2008 (that’s 14 years!). Both offer themes and plugins, and they work in similar ways. The choice between these two did not seem to matter much, although Hugo is said to have a slightly steeper learning curve. I was initially looking to proceed with Hugo, as it is more modern and faster than Jekyll, but I found a beautiful theme that was only available for Jekyll.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;And so, the current website is powered by Jekyll, combined with the &lt;a href=&quot;https://github.com/patdryburgh/hitchens&quot; target=&quot;_blank&quot;&gt;Hitchens theme&lt;/a&gt; and hosted with &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt;. I modified the theme heavily to my likings: I changed the colour scheme, I added an automatic dark mode, I added my own footer with social links, I customised the home page to contain the bulk of the information, added drop caps, and much more. It took upwards of a week to completely build the website, but I am very satisfied with the end product. &lt;em&gt;And the best thing is&lt;/em&gt;: it’s blazing fast, because it’s all just static HTML and CSS. Without any databases and without hogging any resources on my personal server.&lt;/p&gt;
+
+          </description>
+          <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2022/08/24/a-new-website</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2022/08/24/a-new-website</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Transforming a university PC to my new homelab</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;blockquote&gt;
+  &lt;p&gt;A ‘homelab’ is “the name given to a server (or multiple server setup) that resides locally in your home and where you host several applications and virtualized systems for testing and developing or for home and functional usage.” — &lt;a href=&quot;https://linuxhandbook.com/homelab/&quot; target=&quot;_blank&quot;&gt;What is a Homelab and Why Should You Have One?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;dropcap&quot;&gt;A few days ago, I was walking around with some of my peers in the library section of &lt;a href=&quot;https://www.rug.nl/gmw/&quot; target=&quot;_blank&quot;&gt;my faculty at the University of Groningen&lt;/a&gt;. As I descended down the stairs and entered the hallway, I noticed a large table containing a bunch of monitors, keyboards, mice, and even University computers. There hung a sign, indicating that the IT department would no longer be using these units and that students were free take any of the items and bring them home.&lt;/p&gt;
+
+&lt;p&gt;The people that I was with were mostly interested in the monitors. Of course; normally, I would have been, too. However, just a few months ago I started tinkering with a Raspberry Pi 4 and I found myself increasingly often browsing the &lt;a href=&quot;https://www.reddit.com/r/homelab/&quot; target=&quot;_blank&quot;&gt;homelab&lt;/a&gt; and &lt;a href=&quot;https://www.reddit.com/r/selfhosted/&quot; target=&quot;_blank&quot;&gt;self-hosted&lt;/a&gt; subreddits. The people on these subreddits often show off systems that are not even remotely comparable to a Raspberry Pi, but the Raspberry nevertheless offers a respectable way to start experimenting with Linux, Docker, programming, systems administration, and networking.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The Raspberry Pi offers a respectable way to start experimenting with Linux, Docker, programming, systems administration, and networking.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;However, I soon ran into the the limits of the Raspberry Pi, mostly as a result of the ARM chip and the 2GB of RAM that mine was equipped with. Within the homelab communities, I had often seen people recommend Small Form Factor computers because they are relatively small, whilst the x86 CPU offers a whole lot more power than an ARM chip. And so I started looking online for these SFF computers. The search did not last long, for I found myself in that very hallway in the library of my faculty; no two weeks after starting to look for a new computer.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Indeed, those units in the library were exactly what I was looking for. It is an HP Compaq Pro 6300, with the Small Form Factor. The computer originally had (an impressive) 8GB of RAM installed and a 256GB SSD, which I upgraded to 16GB of RAM and two 256GB SSDs. It has a core i3-3220 (Ivy Bridge) CPU @ 3.30GHz, with 2 cores and 4 threads. Although this is certainly not the newest generation, the i3-3220 is still an immense upgrade from the Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/IMG_1424.jpeg&quot; alt=&quot;The computer&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The computer that I got from the university. It even has the little red IT plate on it still.&lt;/figcaption&gt;
+
+&lt;p&gt;On the Raspberry, I ran just a handful of services that I threw together in a single &lt;a href=&quot;https://docs.docker.com/compose/&quot; target=&quot;_blank&quot;&gt;docker-compose&lt;/a&gt; file. But now, I decided to take a different approach. After thoroughly cleaning the case inside and out, I installed &lt;a href=&quot;https://www.proxmox.com/en/&quot; target=&quot;_blank&quot;&gt;Proxmox&lt;/a&gt; as host OS on the system. This allowed me to create several virtual machines to group my services together. Moreover, I could use this as an opportunity to learn about virtualisation software and to work more intricately with Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/IMG_9704.jpeg&quot; alt=&quot;The computer&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Installing the Proxmox hypervisor on the system&lt;/figcaption&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;divided&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update.&lt;/strong&gt; Now, on August 27th, 2022, my homelab has been running nicely for nearly five months. Although I did encounter numerous issues that needed fixing, and the server was often down for extended periods of time, the server has now come to a place where it can safely run for long periods without any required intervention. At the time of writing this, the server runs six virtual machines and 41 Docker containers; each containing a different service or database.&lt;/p&gt;
+
+&lt;p&gt;That one afternoon in the library has surely resulted in a lot of long days, late nights, and much time spent thinking about issues and solutions. But now, five months later, I have learned so much: about hardware and general Linux usage, about virtualisation, containerisation and Docker; about networking and network-attached storage (NAS); and about automation tools to manage all of the virtual machines at once.&lt;/p&gt;
+
+&lt;p&gt;Yet, as with anything, a lot remains to learn. I look forward to the challenges that will surely arise and the solutions that I can think of to get past those challenges. I look forward to deepening my Linux knowledge further and to gain more experience with the management of such systems.&lt;/p&gt;
+
+          </description>
+          <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2022/03/15/transforming-a-university-pc-to-my-new-homelab</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2022/03/15/transforming-a-university-pc-to-my-new-homelab</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Importing iTunes play history into Last.fm</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h5 id=&quot;unfortunately-i-am-writing-this-post-a-few-months-after-i-actually-went-through-this-process-although-i-do-not-remember-all-the-details-i-hope-this-information-can-still-be-of-use-to-someone&quot;&gt;Unfortunately, I am writing this post a few months after I actually went through this process. Although I do not remember all the details, I hope this information can still be of use to someone.&lt;/h5&gt;
+
+&lt;p class=&quot;dropcap&quot;&gt;Recently, I discovered &lt;a href=&quot;https://www.last.fm&quot; target=&quot;_blank&quot;&gt;Last.fm&lt;/a&gt;. Last.fm is a website that provides track, album and artist recommendations based on listening history. Of most interest to me is that Last.FM also provides detailed statistics of users' listening history, such as play counts and which artists and albums I have listened to the most.&lt;/p&gt;
+
+&lt;p&gt;Although iTunes also keeps track of play counts, it is limited to individual track counts and iTunes provides no way of visualising the data. And so, I went looking for a solution to import my listening history (of six years!) from iTunes into Last.FM.&lt;/p&gt;
+
+&lt;p&gt;In the end, I ended up using &lt;a href=&quot;https://universalscrobbler.com/&quot; target=&quot;_blank&quot;&gt;Universal Scrobbler&lt;/a&gt;. I exported all of my iTunes statistics by selecting the columns that I wanted and then hitting CMD+A and CMD+C to copy the rows of information. This I could simply paste into a CSV spreadsheet file. These spreadsheets I had to slightly adjust and split into multiples, as even the Premium status did not allow me to upload all of my sixty-thousand scrobbles at once. This is actually a Last.fm API limitation, but nevertheless I had to stagger my uploads over the course of a month, as I could upload around 2000 scrobbles per day.&lt;/p&gt;
+
+          </description>
+          <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2022/01/12/importing-itunes-play-history-into-lastfm</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2022/01/12/importing-itunes-play-history-into-lastfm</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>De competenties en leerdoelen van CMD: Explained</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;de-opleiding-maakt-gebruik-van-competenties-om-studenten-op-te-beoordelen-in-plaats-van-tentamens&quot;&gt;De opleiding maakt gebruik van competenties om studenten op te beoordelen, in plaats van tentamens.&lt;/h4&gt;
+
+&lt;p class=&quot;dropcap&quot;&gt;Voordat ik in 2018 aan de Bachelor Psychologie begon, heb ik anderhalf jaar de opleiding &lt;a href=&quot;https://www.nhlstenden.com/hbo-opleidingen/communication-multimedia-design-cmd&quot; target=&quot;_blank&quot;&gt;Communication &amp;amp; Multimedia Design (CMD)&lt;/a&gt; gevolgd. Deze opleiding maakt gebruikt van competenties, in plaats van de 'traditionele' tentamens, om studenten te beoordelen. Deze blog post heb ik geschreven om het systeem van competenties en leerdoelen bij CMD toe te lichten voor nieuwe studenten.&lt;/p&gt;
+
+&lt;p&gt;Aan het begin van het eerste jaar kregen we een groen boekje, ‘Studeren bij CMD’. Bewaar deze goed, want ook in de hoofdfase zal het boekje erg nuttig zijn. Het introductie boekje bevat alle informatie over de opleiding, zowel over het propedeuse jaar als de hoofdfase. Ook wordt er uitgelegd over de competenties; wat zijn het, hoe werkt het, hoe krijg je EC’s.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Competenties vormen de basis voor de inrichting van het onderwijs en voor de beoordeling. Een student bewijst in een assessment competent te zijn. Door het werken aan projecten verwerf je competenties op basis-, gevorderd of expertniveau. Hier zijn EC’s aan verbonden.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In de postpropedeuse werken we niet meer aan basis maar aan &lt;em&gt;gevorderde competenties&lt;/em&gt;, dat wil zeggen dat het niveau hoger ligt en er meer van je verwacht wordt om competent te worden op gevorderd niveau. Daarnaast moet je zes punten halen op expertniveau: minstens drie op de competentie Research &amp;amp; Innovation en dan nog 3EC voor een competentie die je zelf mag kiezen.&lt;/p&gt;
+
+&lt;p&gt;Wat de gevorderde competenties van de basis competenties differentieert is dat er bij gevorderd bewuster nagedacht wordt over de gevolgen van een actie en/of implementatie. Ook kan er beter omgegaan worden met variabelen, terwijl er bij basis vaste regels worden toegepast bij voorspelbare situaties.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*i5wsj3cWw88rnr0KNjhfzg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aan de competenties worden leerdoelen gekoppeld, die bij voorkeur &lt;em&gt;SMART&lt;/em&gt; opgesteld worden. Dat wil zeggen: specifiek, meetbaar, acceptabel, realistisch en tijdgebonden. Hier zijn nog een aantal tips voor de leerdoelen:&lt;/p&gt;
+
+&lt;p&gt;Een leerdoel moet:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Uitdagend zijn&lt;/li&gt;
+  &lt;li&gt;Aansluiten bij je huidige niveau&lt;/li&gt;
+  &lt;li&gt;Positief zijn (wat wil je wel leren)&lt;/li&gt;
+  &lt;li&gt;Binnen eigen controle zijn (wat kun jij doen)&lt;/li&gt;
+  &lt;li&gt;Een duidelijke context hebben (waar, wanneer, met wie)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Maak ook gebruik van de feedback en feedforward die je in de vorige periodes hebt gekregen om je leerdoelen, activiteiten en resultaten te verbeteren.&lt;/p&gt;
+
+&lt;p&gt;Er zijn in totaal tien competenties bij CMD:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Research &amp;amp; Innovation:&lt;/strong&gt; De student onderzoekt wat voor oplossing nodig is in diverse omgevingen en empathiseert met de doelgroep&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Concepting:&lt;/strong&gt; De student ontwikkelt concepten&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multimedia Design:&lt;/strong&gt; De student ontwerpt op basis van het concept producten en diensten&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multimedia Production:&lt;/strong&gt; De student voert de eerder gemaakte ontwerpen uit&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quality Monitoring &amp;amp; Implementation:&lt;/strong&gt; De student borgt de kwaliteit van de ten behoeve van de implementatie&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multidisciplinary Teamwork:&lt;/strong&gt; De student werkt systematisch en productief samen in een team en zorgt ervoor dat dit goed verloopt&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Communication:&lt;/strong&gt; De student communiceert met collega’s, opdrachtgevers en andere belanghebbenden&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Project Management:&lt;/strong&gt; De student leidt een team op basis van het gestelde doel en gebruikt daarbij bepaalde management methoden&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sharing:&lt;/strong&gt; De student deelt door vernieuwing en ontwikkeling kennis en kunde&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Growth &amp;amp; Reflection:&lt;/strong&gt; De student reflecteert op eigen werk en handelen en groeit daarin&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Veel studenten hebben moeite met het (op tijd) opstellen van leerdoelen en dat zal in de hoofdfase ook nog wel voorkomen. Onthoud dat je altijd docenten maar ook studenten kunt vragen en voor ons helpt het om de leerdoelen samen met de groep op te stellen. Zo praat je er gezamenlijk over en dan kom je ook op nieuwe ideeën.&lt;/p&gt;
+
+&lt;p&gt;Vaak weten mensen wel al welke richting ze ongeveer op willen, zoals animatie, 3D modelling, et cetera. Deze leerdoelen zijn dan vooral veel voorkomend in onze minor; Game Design &amp;amp; 3D. De kunst is dan nog even om de doelen op een mooie manier te verwoorden zodat die ook geaccepteerd worden door je mentor. Ik houd over het algemeen een volgende patroon aan: “Leren hoe ik [a en b] gebruik, &lt;strong&gt;zodat&lt;/strong&gt; ik [reden x en y]”.&lt;/p&gt;
+
+&lt;p&gt;Hier is een voorbeeld voor mijn concepting leerdoel: &lt;em&gt;“Leren hoe ik gebruik maak van een COCD box om het proces van het convergeren overzichtelijk te houden.”&lt;/em&gt; Dit is een leerdoel voor mijn basispunten, voor gevorderd zou het leerdoel waarschijnlijk niet voldoende zijn.&lt;/p&gt;
+
+&lt;p&gt;Als het echt niet lukt om leerdoelen te vormen, helpt het misschien om te weten dat er een Google Docs bestand in omloop is dat een soort van database van leerdoelen is. CMD studenten zetten er leerdoelen in die zij hebben gevormd en anderen kunnen die ter inspiratie gebruiken om hun eigen leerdoelen mee te vormen. Het is natuurlijk niet de bedoeling dat alles klakkeloos overgenomen wordt, maar dat spreekt voor zichzelf denk ik. Het bestand kan &lt;a href=&quot;https://docs.google.com/document/d/1399UlmRer166XxFK49QkFbBQ-0ydw0zZMSbz8lMDoKU/edit&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt; gevonden worden!&lt;/p&gt;
+
+&lt;p&gt;Het Google Docs bestand is een leuk voorbeeld van iemand die zijn &lt;em&gt;sharing&lt;/em&gt; punten wilde halen. Onder het mom van sharing heeft die een database gestart die nu nog steeds voort leeft, en dus mensen nog steeds helpt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*gIjBPzNpH72m3Gx61Y3avQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+          </description>
+          <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/19/de-competenties-en-leerdoelen-van-cmd</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/19/de-competenties-en-leerdoelen-van-cmd</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>De nieuwe week</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;wat-we-de-afgelopen-week-allemaal-hebbengedaan&quot;&gt;Wat we de afgelopen week allemaal hebben gedaan&lt;/h5&gt;
+
+&lt;p&gt;Maandag heb ik me vooral bezig gehouden met een onderzoek naar schrijven, schrijfstijlen en het beïnvloeden van mensen via tekst. Dat was natuurlijk voor de sharing competentie en deze blog die daarbij hoort. Ik kan natuurlijk wel teksten blijven schrijven en dan word ik ook heus wel beter door de ervaring die ik op doe, maar iets van een achtergrond en wat onderliggend onderzoek kan absoluut geen kwaad.&lt;/p&gt;
+
+&lt;p&gt;Vervolgens hebben we met de groep overlegd wat de doelen voor deze week waren en wat we gingen doen om die doelen te halen. Het is handig om dat te doen, omdat een week zomaar voorbij is zonder dat er veel productieve dingen gebeurd zijn. Door concrete doelen op te stellen hebben we iets om naartoe te werken en kunnen we ook zeggen wanneer het klaar is. Het is meetbaar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*arYrQeOf4iNFSHsA1Tjprg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Later die middag heeft onze project manager een gesprek gehad met twee andere PM’ers van projectgroepen die dezelfde opdrachtgever hebben. De twee groepen werken wel aan andere projecten, maar hebben hetzelfde bedrijf als opdrachtgever en contactpersoon. Dat is opzich interessant. Uit het gesprek bleek dat veel projectgroepen ervoor kiezen om een bepaald schip te kiezen en daar vervolgens een verhaal omheen maken. Dat is dus iets om mee op te passen, het is niet super origineel als wij dat ook doen.&lt;/p&gt;
+
+&lt;p&gt;De meerdere projectgroepen maken gebruik van verschillende soorten middelen om hun boodschap over te brengen. Er wordt over nagedacht om de projecten op een manier te bundelen; dat kan voor leuke resultaten zorgen! Ik weet echter niet wat de docenten en opdrachtgever daar van vinden en meer van het idee weet ik ook niet. Het is een initiatief dat door de project managers besproken is en die zullen het zelf ook moeten voortzetten, als ze dat willen doen. Ik denk dat het wel cool en zeker wel origineel zou zijn.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;De rest van de dagen heb ik al een beetje beschreven. Dinsdag waren we bezig met het opstellen van de &lt;a href=&quot;/blog/2017/10/14/design-gaps&quot;&gt;design gap&lt;/a&gt; en woensdag was ik niet aanwezig. Donderdag was iedereen voornamelijk bezig met het werken aan zijn persoonlijke leerdoelen. Donderdag was ook de dag dat het bericht van de docenten kwam dat &lt;a href=&quot;/blog/2017/10/15/deadline-verschoven&quot;&gt;de deadline uitgesteld was&lt;/a&gt;. Ook al hadden we nu zes dagen meer tijd om onze bestanden in te leveren, we beseften ons door het bericht wel dat de deadline er aan zit te komen en erg dringend is. Het streven is om vijftien punten te halen per half semester, dus dertig in een half jaar. De groep maakt zich wat zorgen over de stand van zaken en haalt waarschijnlijk niet vijftien punten deze periode. We zullen dan in het tweede deel van het semester daarvoor moeten compenseren door meer punten op te nemen.&lt;/p&gt;
+
+&lt;p&gt;Ik denk dat het wel goed is om om de zoveel tijd even stil te staan over hoe het gaat met het project, je persoonlijke leerdoelen en wat er nog moet gebeuren om voldoende resultaten op te brengen. Ik heb een lijstje gemaakt met taken en dingen die ik nog moet doen voor de deadline. Voor mij valt dat allemaal wel mee gelukkig, omdat ik niet heel veel punten op neem. Het zijn vooral dingen als; zorgen dat ik al mijn leerdoelen heb gehaald, zorgen dat het groeidocument goed in elkaar zit, reflecties schrijven en zorgen voor meer feedback.&lt;/p&gt;
+
+&lt;p&gt;Woensdag is nog een onderzoeksdoel opgesteld door de groep en is een ander groepslid ingelicht over de design gap, omdat die eerder niet aanwezig was. Vrijdag hebben we de doelgroep veranderd na overleg met een andere groep. De doelgroep is nu studenten van achttien tot ongeveer dertig jaar. De redenen hiervoor zijn dat studenten vaak een eigen mening hebben en zich al veel bezighouden met technologie en alles dat daar relevant aan is. Sommige concepten sluiten daar beter bij aan dan bij een doelgroep die weinig tot niks van technologie weet.&lt;/p&gt;
+
+          </description>
+          <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/17/de-nieuwe-week</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/17/de-nieuwe-week</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Deadline verschoven!</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;een-paar-dagen-meertijd&quot;&gt;Een paar dagen meer tijd&lt;/h5&gt;
+
+&lt;p&gt;De minor maakt voornamelijk gebruik van &lt;a href=&quot;https://slack.com&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt; als communicatiemiddel. Het is als Discord dat sommigen misschien kennen, maar bij Slack ligt de focus vooral op werk en productiviteit. Hoe dan ook, woensdag 11 oktober kregen we een bericht van één van de docenten dat de deadline was verschoven! In plaats van dat de deadline was op 20 oktober is dat nu zes dagen later; 26 oktober.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*OuPyJBthKAu3YXiNVzQF9w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Het bericht dat werd geplaatst in Slack&lt;/figcaption&gt;
+
+&lt;p&gt;Het lijkt voor ons alsof we eigenlijk pas net met het project zijn begonnen en dat geldt helemaal voor mij persoonlijk. Ik denk dat dat komt omdat ik gewend ben aan de projecten van de propedeuse, die duren allemaal maar de helft van de projecten in de hoofdfase. Die zijn in totaal een half jaar (dat is dus één semester) in plaats van de tien weken durende periodes in de hoofdfase.&lt;/p&gt;
+
+&lt;p&gt;Het semester is opgedeeld in twee delen, zodat we niet één enorm assessment hebben waar we in één keer dertig punten moeten laten beoordelen. De deadline op 26 oktober is de eerste helft en het streven is om vijftien punten per assessment te halen. Zo blijf je goed op pad zonder achter te lopen. Als je je propedeuse nog niet hebt gehaald moet dat nog wel, bovenop de 15 punten die we streven te halen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*7X7FUMh6U97PNqKLmE9YkA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Slack is het communicatiemiddel dat de minor voornamelijk gebruikt&lt;/figcaption&gt;
+
+          </description>
+          <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/15/deadline-verschoven</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/15/deadline-verschoven</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Design gaps!</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;eigenlijk-is-het-er-nu-maar-één-maar-nog-steeds-wel-belangrijk&quot;&gt;Eigenlijk is het er nu maar één, maar nog steeds wel belangrijk&lt;/h5&gt;
+
+&lt;p&gt;Ook in de hoofdfase zijn design gaps belangrijk. Bij het maken van de design gap wordt vastgesteld wat de huidige situatie is en wat de gewenste situatie is. Daar zit een ‘gat’ tussen; de design gap. Dat gat moet gevuld worden om bij de gewenste situatie te komen.&lt;/p&gt;
+
+&lt;p&gt;We hebben onze situaties met de groep vastgesteld en overlegd over het project. De gewenste situaties en daarmee design gaps veranderen regelmatig bij het ingaan van een nieuwe sprint; de resultaten die we nu hebben kunnen dus nog gewoon veranderd worden als dat nodig is of blijkt uit testresultaten. We hebben nu de doelgroep gezet op de Nederlandse cultuur. De huidige situatie is dat de geschiedenis van de West-Indische Compagnie (WIC) momenteel weinig tot geen deel uit maakt van de Nederlandse cultuur.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*FEX5PLxvlQXiN9Tx9l8UZw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;De gap die gevuld moet worden om bij de gewenste situatie te komen&lt;/figcaption&gt;
+
+&lt;p&gt;Dat zien we graag anders en dan komen we aan bij de gewenste situatie; wij en de opdrachtgever zien graag dat het Nederlandse verleden van de slavenhandel meer deel uit maakt van onze cultuur. Wij denken dat dat nu nog niet heel sterk zo is. De &lt;em&gt;gap&lt;/em&gt; is dan: “We willen de Nederlandse cultuur dusdanig beïnvloeden dat de Nederlandse invloed op de slavenhandel en de WIC meer deel uit maken van onze cultuur”. Er zijn een aantal dingen die moeten gebeuren om invloed te hebben op zoiets groots als dit, we zullen zien hoe het gaat.&lt;/p&gt;
+
+&lt;p&gt;Persoonlijk denk ik dat dit misschien te groot is gegrepen; een ‘cultuur’ wordt niet zomaar even aangepast. Het is niet iets dat vast op papier staat en er zijn een aantal vragen die ontstaan bij het lezen van deze design gap; hoe maakt iets deel uit van een cultuur en hoeveel is de geschiedenis van de WIC werkelijk deel van de Nederlandse cultuur? We kunnen er alleen achter komen of dit zou werken of niet door, je raadt het al, te testen. We moeten nu prototypes maken en die bij de doelgroep testen om te zien wat voor resultaten we krijgen.&lt;/p&gt;
+
+          </description>
+          <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/14/design-gaps</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/14/design-gaps</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Voortgangsgesprek met de opdrachtgever</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;nog-een-belafspraak-viaskype&quot;&gt;Nog een belafspraak, via Skype&lt;/h5&gt;
+
+&lt;p&gt;Vrijdag hadden we weer een bel afspraak met de opdrachtgever. We hebben een aantal onderwerpen doorlopen met hem en nogmaals gevraagd wat het doel van de opdracht was, op aanraden van de docenten. Het was fijn geweest als we een concreet antwoord hadden gekregen maar toen we het vroegen was het nog steeds niet super duidelijk. We hebben met de groep maar besloten dat onze opdrachtgever een historicus is, wat ook zo is, die gewoon zijn verhaal kwijt wil bij de mensen. Hij wil zo veel mogelijk aandacht voor zijn onderwerpen en expertise maar daar zal verder niet een uitgebreide reden achter zitten, zoals het verzamelen van geld wat we eerst dachten dat het doel was.&lt;/p&gt;
+
+&lt;p&gt;Verder hebben we het gehad over het storyboard dat we hadden opgestuurd, dat vond hij “heel prima”. Ook ons algemene concept en zelfs de shockerende factor was de opdrachtgever positief over. Goed nieuws allemaal! De opdrachtgever benadrukte dat het project strict over de WIC gaat en niet over de VOC, oppassen voor die fout dus. Ook vroeg hij zich af of het wel een goed idee was dat we projectoren gebruikten in een ruimte gebruiken, wij gaan kijken of het te realiseren is of dat het te moeilijk is.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*SvCulJ44Mn929Y05F2ewnQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De opdrachtgever vind wel dat het waarschijnlijk een minder goed idee is om het perspectief van de bemanning te gebruiken; hij denkt dat het handiger is om perspectief van een rat of vogel te gebruiken. Wat betreft de clue hint de opdrachtgever in het gesprek meer naar het drama zelf en hoe onrechtvaardig er met de bemanning is omgegaan; ze zijn namelijk niet veroordeeld.&lt;/p&gt;
+
+&lt;p&gt;Nadat het gesprek afgerond was hebben we met de groep overlegd en hebben we het gehad over wat de volgende stap zou zijn. Het werd duidelijk dat de opdrachtgever een landelijke discussie wil creëren en niet zozeer geld wil verdienen. Het gaat dus om een soort van campagne. Het gevolg van een landelijke discussie over bepaalde onderwerpen is dat er al snel mensen zullen zijn die meer interesse tonen in het onderwerp. Voorheen hebben ze daar misschien nooit aan gedacht maar als het in de media is en mensen praten erover is er een grote kans dat een bepaald aantal mensen blijvende interesse krijgt in de onderwerpen.&lt;/p&gt;
+
+&lt;p&gt;Vervolgens was de vraag hoe we een grootschalige discussie starten; dat kan door de Tweede Kamer proberen te bereiken of het publiek. Er is ook de Sinterklaas intocht vlak voor het huis van één van de groepsleden, daar kunnen we misschien wel wat geks doen om aandacht te trekken.&lt;/p&gt;
+
+&lt;p&gt;Ook iets dat we ons moeten beseffen, en dat klinkt heel onsympathiek maar dat is hoe het was, is dat het gevoel dat wij hebben als een stal met kippen verbrand wordt gelijk is aan het gevoel dat de mensen vroeger hadden bij een groot aantal slaven die verdronken. De slaven waren niet veel meer waard dan vee. De slaven werden gedehumaniseerd en de opdrachtgever wil dat precies dat ook een deel wordt van de Nederlandse cultuur. De vraag is dan echter, beweert de opdrachtgever dat Nederlanders niet afweten van de slavernij? Dat is natuurlijk niet wat hij zegt, maar we mogen er van uit gaan dat de gemiddelde Nederlander wel weet hoe Nederland omging met de slavernij en het staat ook zeker wel in de geschiedenis boeken.&lt;/p&gt;
+
+&lt;p&gt;Het doel van de opdrachtgever is om de cultuur over te brengen en dat wil hij doen door het onderwerp zo veel mogelijk bespreekbaar te maken. Dat doe je dus door zo’n onderwerp aan te snijden bij het Nederlandse publiek. We hebben wel even gediscussieerd over de vraag of we Den Haag wel of niet bij ons plan moeten betrekken. Want wat gaat de politiek met onze discussie doen? Of waar discussiëren ze überhaupt over? Er valt niet veel meer te zeggen dan “Oh, oke. Het is gebeurd en dat was onmenselijk”. De verantwoordelijke personen kunnen moeilijk nog gestraft worden. In ieder geval, we gaan de link leggen met iets actueels om een discussie te starten. We moeten wel oppassen dat het heel snel fout kan gaan lopen omdat het toch wel een vrij controversieel onderwerp is. Maar dat maakt niet super veel uit. Een bekende, relevante uitspraak is &lt;em&gt;“there is no such thing as bad publicity”&lt;/em&gt;.&lt;/p&gt;
+
+          </description>
+          <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/13/voortgangsgesprek-met-de-opdrachtgever</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/13/voortgangsgesprek-met-de-opdrachtgever</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Verassingen in de ochtend</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;we-kwamen-op-school-en-toen-zagenwe&quot;&gt;We kwamen op school en toen zagen we..&lt;/h5&gt;
+
+&lt;p&gt;Dinsdag kwamen we op school en gingen we aan onze gebruikelijke tafel zitten. Deze ochtend zat er echter nog iemand. In eerste instantie leek het dat hij gewoon aan het werk was in zijn eentje en wachtte op zijn groep maar ik herkende hem niet direct. De jongen kende één van onze groepsleden en die begonnen te praten; al snel bleek dat &lt;em&gt;Erwin&lt;/em&gt; nog geen groep had, ook al zaten we al in de derde week van het project. Erwin was een tijd ziek geweest en niet bij een groep ingedeeld; hij moest zelf maar een groep uitzoeken en vragen of hij zich bij hen aan mocht sluiten.&lt;/p&gt;
+
+&lt;p&gt;Aangezien onze groep maar vijf personen had en een aantal andere groepen wel op de zes personen zaten was het absoluut geen probleem dat Erwin bij ons kwam. Hij past goed bij de rest van de groep en we zijn blij met de extra mankrachten!&lt;/p&gt;
+
+&lt;p&gt;De rest van de dag hebben we besteed aan het informeren van Erwin over het project en alles dat we al hebben gedaan. Hij heeft een aantal bestanden bekeken en consults en gesprekken teruggelezen zodat hij helemaal up-to-date is. Ondertussen was ik bezig met het uitwerken en visualiseren van de conceptingsessie van de afgelopen donderdag. Dit deed ik onder andere met een nieuw programma dat ik heb gevonden, &lt;a href=&quot;https://mindnode.com&quot; target=&quot;_blank&quot;&gt;Mindnode&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*lup-YX526PzGCjAyIpXX4w.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+          </description>
+          <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/11/verassingen-in-de-ochted</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/11/verassingen-in-de-ochted</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Consults, meer consults &amp; nog meer consults</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;gesprekken-met-docenten-over-leerdoelen-de-loop-van-het-project-enmeer&quot;&gt;Gesprekken met docenten over leerdoelen, de loop van het project en meer&lt;/h5&gt;
+
+&lt;p class=&quot;dropcap&quot;&gt;Een belangrijk onderdeel van de opleiding zijn de gesprekken (“consults”) met de docenten. Omdat er relatief weinig contacturen zijn moet je zelf zorgen voor afspreken met de docenten als je vragen wilt stellen. Vaak kan dit gewoon via een berichtje op WhatsApp, maar sommige docenten hebben liever dat je de website van de opleiding gebruikt of een e-mail stuurt om een afspraak te maken. Dit geldt allemaal net zozeer in de hoofdfase als in het propedeuse jaar.&lt;/p&gt;
+
+&lt;p&gt;Eerst hadden we gesprekken met Jeroen en Stephan over de loop van het project en hoe we het beste verder konden gaan. De docenten zeiden beiden dat het opstarten van een project vaker erg moeizaam is en dat wat er bij ons gebeurde niet heel vreemd was. Pas later in het project begint het vaak een stuk duidelijk te worden.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Het opstarten van een project loop heel vaak erg moeizaam”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In ons geval hadden we last van onduidelijkheid over de opdracht; de opdrachtgever is niet super duidelijk met wat hij nou eigenlijk echt wil bereiken met het project dus we zijn maar gewoon begonnen met een aantal brainstormsessies zodat we in ieder geval wat voor konden leggen. Dat is echter niet volgens de Design Thinking methode, die we hier wel zoveel mogelijk aan willen houden. Nu lopen we een beetje vast en het helpt niet dat we ook nog niet een definitief gedefinieerde doelgroep hebben. De docenten vertelden ons dat we nu gewoon verder meoten met wat we hebben; dus het concept concreet maken en een doelgroep stellen en dan kunnen we zo snel mogelijk bezig met een prototype dat we kunnen testen. De volgende iteraties en sprints kunnen we dan het concept en het prototype wel weer verbeteren, én gebruik maken van Design Thinking. Dat wil nu niet meer echt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*GS8X5ji5D_JGgYqcrst1Yg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Durf de docenten te vragen&lt;/figcaption&gt;
+
+&lt;p&gt;Een paar dagen later hadden we een consult met Vincent, een conceptingdocent. Daar hebben we veel aan gehad, omdat we een aantal vragen hadden waardoor we moeilijk verder konden met het project. Ook hebben we dingen gevraagd over onze leerdoelen en wat het verschil nou precies is tussen basis en gevorderde conceptingpunten. Het antwoord hierop, heel kort samengevat, was dat bij gevorderde concepting er veel bewuster nagedacht wordt over de gevolgen van het uitvoeren van een concept.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bij gevorderde concepting wordt er veel meer nagedacht over, “wat gaat dit concept nou eigenlijk doen bij mijn gebruiker?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ook hebben we een ander perspectief gekregen van Vincent over onze doelgroep. Hier viel echter niet iets heel concreets over te vertellen omdat we nog steeds niet zeker wisten wat onze opdrachtgever nou eigenlijk echt van ons verwachtte en wat hij wilde bereiken.&lt;/p&gt;
+
+&lt;p&gt;Het idee om project mapping te gebruiken is cool maar we moeten oppassen dat we ons er niet aan vast klampen: als het niet kan of geen positieve reacties krijgt van de doelgroep tijdens het testen, zullen we het los moeten laten. Dat is jammer maar als het niet effectief is hebben we er vrij weinig aan. De enige manier om dit zeker te weten is door te testen. Maak een prototype, test het bij de doelgroep. Alleen dán krijgen we concrete antwoorden en het is belangrijk om te beginnen met het doorhakken van knopen, anders duurt het allemaal te lang en komen we niet echt vooruit met het project.&lt;/p&gt;
+
+          </description>
+          <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/10/consults-consults-consults</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/10/consults-consults-consults</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Concepting! Brainstormen!</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;donderdag-28-september-hebben-we-nog-een-conceptsessie-gehad-met-veelbelovende-resultaten&quot;&gt;Donderdag 28 september hebben we nog een conceptsessie gehad, met veelbelovende resultaten&lt;/h5&gt;
+
+&lt;p&gt;Nadat we maandag hebben gepraat met de opdrachtgever zijn we nu verder gegaan met brainstormen. We hadden al wel globale ideeën zoals die van SAIL en iets met VR, maar wisten niet precies hoe en wat. Dat hebben we in deze conceptsessie concreet bedacht.&lt;/p&gt;
+
+&lt;p&gt;We hebben ons niet zozeer aan bepaalde methodes gehouden. We willen de methodes juist wat loslaten zodat we niet daar in blijven haken; veel mensen doen dat wel volgens de conceptingsdocenten. We hebben een aantal vragen gesteld. We begonnen met, “Wat weten we?”, waarna we verder gingen met “Wat voor verhaal willen we uitbeelden en hoe?”. Daarna vroegen we ons af hoe we over kunnen brengen dat zevenhonderd mensen echt &lt;em&gt;heel&lt;/em&gt; veel is. We hebben de vragen met zijn allen beantwoordt en zijn in het proces op een aantal goede ideeën gekomen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*tsOX84GSQ0qE0DvnQ5CC8g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Een screenshot van de Brain Fuel app voor iOS&lt;/figcaption&gt;
+
+&lt;p&gt;Na de vragen in rondes te hebben beantwoordt hebben we ook nog gebruik gemaakt van de Brain Fuel app. Dat is de app van de mensen waarvan we eerder de brainstorm workshop hadden en het is eigenlijk best een hele leuke manier van concepting. Het heeft ons ook nu zeker wel geholpen. Het is heel simpel: er is een kaart op het scherm van een compleet ongerelateerd onderwerp. Vervolgens proberen we daar dingen van ons project aan te koppelen. Dat hebben we een aantal keer gedaan met verschillende kaarten.&lt;/p&gt;
+
+&lt;p&gt;Uiteindelijk kwamen we tot deze conclusie:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Als we alles combineren komen we uit op een concept waarbij er gebruik gemaakt wordt van verschillende ideeën en vormen van media om mensen te beïnvloeden tijdens het SAIL evenement in Amsterdam. Het begint met posters (voorbeelden hieronder) en dan wordt de zeeman/matroos geïntroduceerd. Die wordt geportretteerd als held die ons rijkdommen toebracht in de Gouden Eeuw. Vervolgens begint de subtiele overgang naar de donkere kant: men komt terecht in de Escapeless Room waar de matroos te zien is die de luiken dichttimmert en de mensen opsluit. Ook is de live verdrinking show te zien. Dan komt de final countdown in zicht en komt de clue: Er zijn zevenhonderd slaven dood gegaan in die tijd omdat wij Nederlanders daar zo in handelden. De bemanning heeft uit angst niets gedaan om de slaven te redden en heeft juist moeite gedaan om de slaven extra goed op te sluiten. De mannen komen terug in Nederland en worden als helden ontvangen. Het gezonken schip met alle slaven is tot op de dag van vandaag nog niet teruggevonden.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nadat de conceptsessie voltooid was heb ik de taak op me genomen om de sessie te verwerken en visualiseren. Ik heb eerst alles in een document beschreven en daarna gebruik gemaakt van mijn nieuwe programma &lt;a href=&quot;https://mindnode.com&quot; target=&quot;_blank&quot;&gt;Mindnode&lt;/a&gt; om het concept op een prachtige manier te visualiseren. Hier is een interactieve versie van de mindmap te zien: &lt;a href=&quot;https://my.mindnode.com/KBU8H9FiLGAiDLMh7sAyRf2JpdqqcABBNCPxcV5j&quot; target=&quot;_blank&quot;&gt;my.mindnode.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*qj0xUoYLqgZp27iQVeXXZg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Dit was wat we gebruikten tijdens het brainstormen om dingen mee te visualiseren&lt;/figcaption&gt;
+
+          </description>
+          <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/09/concepting-brainstormen</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/09/concepting-brainstormen</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Kennismaken, pressure cooker en solliciteren voor opdrachten</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;het-échte-begin-van-de-schoolweken-bij-de-gd3d-minor-opcmd&quot;&gt;Het échte begin van de schoolweken bij de GD3D minor, op &lt;a href=&quot;https://www.nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;.&lt;/h5&gt;
+
+&lt;p&gt;In &lt;a href=&quot;/blog/2017/09/27/Mijn-eerste-week-in-de-hoofdfase&quot;&gt;de vorige blog&lt;/a&gt; schreef ik over de week waarin het project begon. Maar dat is niet hoe het écht is begonnen. In deze post leg ik uit hoe de allereerste week verliep en het solliciteren naar opdrachten in de week daarna.&lt;/p&gt;
+
+&lt;p&gt;We kregen op 14 juli een email waarin stond dat we op maandag 4 september werden verwacht in lokaal D2.007 op de NHL Hogeschool. Toen het zover was en we met alle mensen in het lokaal zaten, werd eerst uitgelegd wat er allemaal zou gebeuren in de minor en hoe alles zou verlopen. Een aantal mensen wisten al hoe het zou verlopen, een aantal niet. Er zijn verbazend veel studenten van andere scholen en we hebben zelfs een studente die uit Turkije komt. Daardoor werd vanaf dat punt alles in het Engels uitgelegd door de docenten. We deden polls met &lt;a href=&quot;https://www.mentimeter.com&quot;&gt;Mentimeter&lt;/a&gt; die later werden toegelicht. Vervolgens gingen we ’s middags kennis maken met de groep; dat deden we door middel van papiertjes waar we ons uiterlijk en hobbies op moesten schrijven. De papiertjes werden gehusseld en verspreid; het was de bedoeling dat ik raadde wie ik had. Gelukkig lukte me dat in één keer, en gelukkig werd ik zelf ook in één keer geraden.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*zCiQbiBPm5_2ZOZgmZg2jQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De volgende dag was er een tripje naar Ameland met de klasgenoten, maar ik had die nacht slecht geslapen en heb me daardoor verslapen. Ik kon niet meer op tijd zijn en heb de boot gemist. Woensdag begonnen we met de pressure cooker. De &lt;strong&gt;pressure cooker&lt;/strong&gt; was in dit geval een driedaags project waarin we in heel korte tijd alle stappen van het maken en voltooien van een project moesten doorlopen. Er is natuurlijk veel minder aandacht voor details in het opgeleverde werk en het is leuk om in zulke korte tijd al een product neer te kunnen zetten. We kregen groepen toegewezen van vier tot zes personen; wij hadden vier in totaal. De opdracht was dat we aandacht moesten trekken voor de slechte situatie waarin de bijen zich bevinden, en we kozen al snel voor het maken van een animatie video; maar toch net even anders. Het concept dat we hadden was gebaseerd op een spel.&lt;/p&gt;
+
+&lt;p&gt;De animatie die we maakten was eigenlijk een game trailer. Woensdag hadden we het concept al vrij snel klaar en donderdag konden we beginnen met het produceren van assets voor in de animatie. We hebben eerst een storyboard opgezet zodat we wisten wat we nodig hadden en in welke volgorde en met welke tijden de animatie zou zijn. Vervolgens heb ik het storyboard geïmplementeerd in After Effects zodat we de opzet al hadden en de assets enkel ingevoerd hoefden te worden. Daarna heb ik met een andere groepsgenoot de audio bij elkaar gezocht, terwijl de andere twee leden de assets aan het tekenen waren. Dat tekenen ging verbazend snel en donderdag toen we naar huis gingen waren we al bijna klaar. Donderdagavond heb ik nog een paar dingen klaargemaakt en vrijdagochtend kreeg ik de laatste paar dingen die ik nog nodig had. De deadline was vrijdag om 14:00. We werkten al deze tijd in een grand cafe, waar de lunch voor ons werd verzorgd.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;divided&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;De volgende week begon met het bekijken van de beschikbare opdrachten. De verschillende opdracht omschrijvingen waren geprint en die werden verspreid door het lokaal. We alvast kiezen wat we wilden doen en dat bij de project managers melden, zodat die een idee hadden van hoeveel mensen ze zouden krijgen tijdens het solliciteren. Ik wist niet echt welke opdracht ik wilde doen maar heb uiteindelijk gekozen voor die van de GGZ. De tweede keuze ging over een museum in Heerenveen. De volgende dag heeft iedereen aan zijn groeiportfolio’s gewerkt en verder gebeurde er niet veel speciaals. Woensdag begon de dag met de pitches van de opdrachtgevers. Elke opdracht kwam aan bod en de opdrachtgevers legden uit waar hun project over ging. ’s Middags hadden we zelf pitches; elk groepje liet zijn resultaten van de pressure cooker van de vorige week zien. De opdrachtgever van de pressure cooker was daar ook bij en gaf over iedere opdracht haar mening. Ze was over het algemeen erg positief!&lt;/p&gt;
+
+&lt;p&gt;Na de pitches begon het officiële proces van het solliciteren voor opdrachten. Dat klinkt heel dreigend en serieus maar eigenlijk hield het heel weinig in. Iedereen kreeg een papiertje waar een paar dingen op stonden, de rest moesten we zelf invullen. Dat ging om onze naam, eerste en tweede keuzes voor het project en wat we wilden leren. Ik bleef bij mijn keuzes voor GGZ en Heerenveen. Die papiertjes leverden we gewoon in bij de desbetreffende PM’er en die ging vervolgens in overleg met de rest van de project managers om te kijken hoe alles zou passen en welke personen in welke groepen zouden horen. Helaas ben ik niet ingedeeld in mijn eerste óf mijn tweede keuze. Dat is omdat er een opdracht was waarbij letterlijk niemand zich had opgegeven; er was dus een project manager zonder project en zonder groep. Daarom moesten mensen uit de andere groepen worden gehaald om die van hem te vullen en ik was één van die mensen. Uiteindelijk vind ik het niet heel erg omdat ik een groep heb met leuke personen en een leuk project waar veel potentie in zit, maar ik blijf er bij dat ik het heel vreemd vind dat we solliciteren op bepaalde dingen, een eerste en tweede keuze geven en daar dan niet bij komen. Het gaat namelijk wel over een project dat een half jaar lang duurt!&lt;/p&gt;
+
+&lt;p&gt;De opdracht die we nu hebben was nog niet definitief en moest nog concreet gemaakt worden. Daarom hebben we helaas best wel lang moeten wachten op concrete antwoorden en het hielp niet dat de opdrachtgever niet bereikbaar was gedurende de eerste week dat we wilden beginnen. We hebben gepraat en gebeld met de vrouwen die verantwoordelijk zijn voor het binnenhalen van de opdrachten en het contact met de opdrachtgevers en onze mentor heeft ook haar best gedaan om zo snel mogelijk onze situatie te helpen. Nu we een gesprek met de opdrachtgever hebben gehad weten een stuk concreter wat er van ons verwacht wordt en wat we moeten doen. Om het heel kort te verwoorden; het gaat erom dat we &lt;em&gt;zo veel mogelijk&lt;/em&gt; aandacht trekken voor de Nederlandse scheepswrakken. Deze kunnen moeilijk even uit het water getild worden en zijn daarom moeilijk te benaderen voor het algemene publiek. Zoiets moet bijna wel in 3D gedaan worden om het naar de mensen te brengen.&lt;/p&gt;
+
+          </description>
+          <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/04/kennismaken-pressure-cooker-en-solliciteren</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/04/kennismaken-pressure-cooker-en-solliciteren</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Gesprek met de opdrachtgever</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;h5 id=&quot;eindelijk-duidelijkheid&quot;&gt;Eindelijk duidelijkheid!&lt;/h5&gt;
+
+&lt;p&gt;De week begon met een gesprek met de opdrachtgever. Het is belangrijk dat we op één pagina zitten met de opdrachtgever. We begonnen met het opstellen van een aantal vragen die we hebben gecategoriseerd. Het gesprek begon met een introductie van beide partijen en vervolgens hebben we het gehad over wat de opdrachtgever precies van ons verwachtte en hebben we onze twee concepten (het SAIL idee en het VR idee) aan hem voorgelegd.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*2oXSuhRxkmUItVh6xxrz0A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gelukkig stond de opdrachtgever open voor nieuwe ideeën; hij werd erg enthousiast over onze concepten en door onze gedachten te bundelen zijn we zelfs op nieuwe ideeën gekomen. Het was goed dat we een gesprek met de opdrachtgever konden hebben; we hebben nu veel meer duidelijkheid over wat er van ons verwacht wordt en nu voelt het alsof we een stuk beter verder kunnen met het project.&lt;/p&gt;
+
+&lt;p&gt;De volgende twee dagen kon één van onze groepsleden er niet bij zijn, maar dat maakte niet heel veel uit. We zijn vooral bezig geweest met het definiëren van de doelgroep, het concept verder uitwerken en concreet maken en we hebben het gehad over het telefoongesprek van maandag. We zijn begonnen met scrum en hebben een scrumbord opgezet via &lt;a href=&quot;https://trello.com/&quot; target=&quot;_blank&quot;&gt;Trello&lt;/a&gt;, ik hoop dat het actief bijgehouden wordt door de groep.&lt;/p&gt;
+
+          </description>
+          <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/10/02/gesprek-met-de-opdrachtgever</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/10/02/gesprek-met-de-opdrachtgever</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>Mijn eerste week in de hoofdfase</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;h4 id=&quot;dit-is-een-series-waarin-ik-mijn-ervaringen-deel-als-nieuwe-student-in-de-hoofdfase-van-de-opleiding-cmd-ik-zit-in-de-minor-gd3d-een-bundeling-van-de-twee-minors-game-design-en-3d-dit-is-het-eerste-semester-waarin-de-combinatie-van-minors-geprobeerd-wordt&quot;&gt;Dit is een series waarin ik mijn ervaringen deel als nieuwe student in de hoofdfase van de opleiding &lt;a href=&quot;https://nhl.nl/opleiding/voltijd/communication-multimedia-design&quot;&gt;CMD&lt;/a&gt;. Ik zit in de minor GD3D, een bundeling van de twee minors Game Design en 3D; dit is het eerste semester waarin de combinatie van minors geprobeerd wordt.&lt;/h4&gt;
+
+&lt;p&gt;Voorafgaand aan deze week hebben we een driedaags project gedaan, wat ook wel een “pressure cooker” genoemd wordt. Zo doorloop je in heel korte tijd alle stappen van het maken van een project maar is er natuurlijk veel minder aandacht voor detail in het opgeleverde werk. Hier ga ik nog over schrijven!
+&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Vrijdag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vrijdag hadden we het eerste officiële contactmoment met de groepsleden. Één persoon was ziek, maar dat maakte niet veel uit. We hebben de opdrachtomschrijving nog niet maar we hebben een globaal idee van wat de opdrachtgever ongeveer van ons vraagt. Het is de bedoeling dat we de aandacht van een zo breed mogelijke doelgroep vestigen op het grote aantal scheepswrakken dat in de Nederlandse wateren ligt. We hebben een brainstormsessie gedaan met de in totaal vier groepsleden die aanwezig waren. We hebben alles waar we aan konden denken wat we konden doen met &lt;em&gt;virtueel musea&lt;/em&gt; opgeschreven en een woordweb gemaakt. Zo zijn er een aantal globale ideeën uitgekomen waar we later aan konden werken.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Maandag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Maandag hebben we geprobeerd om duidelijkheid te krijgen over de opdracht, dat hadden we nog steeds niet. Er was echter niemand te vinden die contact op kon nemen met de opdrachtgever. Daarna hebben we verder kennisgemaakt met de groep; ik kende maar één persoon en de rest kende eigenlijk niemand van het groepje.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*g_jc91KvreTdEkfpqB81SQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Mijn resultaten van het kwaliteitenspel&lt;/figcaption&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Dinsdag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We hadden een workshop (Brainfuel) van &lt;em&gt;Friso Visser&lt;/em&gt; en &lt;em&gt;Frans Scheepers&lt;/em&gt; dat anderhalf uur duurde. De workshop ging over brainstormen en we hebben nieuwe en unieke methoden gebruikt om onze vraag te beantwoorden; “Hoe interesseren wij de [doelgroep] in het onderwater cultureel erfgoed?”. De doelgroep is zo breed mogelijk volgens de opdrachtgever, die heeft dus geen specifieke doelgroep in gedachten. Er kwamen veel resultaten uit het concepten en daar kunnen we zeker op verder bouwen. ’s Middags hebben we met de groep het kennismakingsspel &lt;em&gt;Kwaliteitenspel&lt;/em&gt; gedaan. Zo zijn we op een hele luchtige manier dingen over elkaar te weten gekomen.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Woensdag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We hebben de brainstormtechniek en resultaten van gisteren uitgewerkt in een document en met de groep overlegd over de “regels” die we komend semester aanhouden met de groep. Er is een &lt;em&gt;code of conduct&lt;/em&gt; bestand opgesteld met de dingen die van elk groepslid verwacht worden.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Donderdag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Donderdagochtend hadden we een afspraak met onze tutor en mentor. Dat is dezelfde persoon in de hoofdfase. We hebben het gehad over de loop van het project tot nu toe en wat we konden in de tussentijd totdat we een concrete opdrachtomschrijving hadden. We werden aangeraden om dingen te doen die wel alvast konden, zoals de structuur van het project alvast vastleggen (denk aan scrum, google drive, calendar, et cetera). Ook hebben we het gehad over onze situatie met de opdrachtgever, persoonlijke ontwikkeling en hebben we afspraken gemaakt voor individuele gesprekken. ’s Middags was ik afwezig.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Vrijdag&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vrijdag was een dag die &lt;em&gt;echt&lt;/em&gt; productief voelde. De dag begon met een e-mail van de opdrachtgever (eindelijk!!) waarin we wat meer duidelijkheid konden vinden. Het was echter nog steeds niet heel duidelijk, de mail was ongestructureerd en in het algemeen onduidelijk. De opdrachtgever was het eens met ons voorstel om binnen korte tijd te Skypen; de opdrachtgever woont en werkt namelijk op grote afstand van onze school. Goed nieuws dus. Na de mail gelezen te hebben gingen we verder en hebben we nogmaals een conceptsessie gehouden.&lt;/p&gt;
+
+&lt;p&gt;Eerst hebben we het gehad over hoe we de doelgroep zullen verkleinen. De opdrachtgever heeft in de mail nogmaals gesteld dat ze een zo breed mogelijke doelgroep willen. Dat is voor het project echter moeilijk; we moeten het wel een &lt;em&gt;beetje&lt;/em&gt; beperken en een gedefinieerde doelgroep hebben om een goed passend prototype te kunnen testen bij de doelgroep en op te leveren aan de opdrachtgever. Er is uiteindelijk nog geen definitief besluit genomen, maar er werd algemeen wel ingestemd dat de hele jonge mensen en de hele oude mensen afvallen. Die hebben namelijk niet genoeg interesse in technologie, mochten we iets met VR willen doen, en de jongere doelgroep interesseert zich niet genoeg in culturele dingen zoals die van ons project. We hebben dan dus ongeveer jongeren vanaf vijftien tot twintig jaar tot en met mensen van ongeveer veertig of vijftig.&lt;/p&gt;
+
+&lt;p&gt;Nadat we het hadden gehad over de doelgroep gingen we ideeën bedenken en verder werken met de ideeën die we al hadden van de vorige conceptsessies. Uiteindelijk is er nog gepraat over wat voor beeld we wilden creëeren en hebben we het concepten voor deze dag afgerond met twee concepten die we voor zullen leggen aan de opdrachtgever. Het ene idee betreft virtual reality, wat een erg populair onderwerp is in de minor. We waren het er allen mee eens dat als we mensen willen bereiken en willen dat die dingen onthouden, dat mensen laten schrikken niet een slecht idee is. Een schok zet mensen aan het denken en maakt dat men &lt;em&gt;deelt&lt;/em&gt;. Dat is precies wat we willen bereiken. Het andere concept heeft te maken met &lt;a href=&quot;https://en.wikipedia.org/wiki/Projection_mapping&quot;&gt;project mapping&lt;/a&gt;. Dat komt er dus op neer dat er geprojecteerd wordt op objecten, zoals gebouwen maar ook schepen of andere achtergronden. Er zijn heel veel mogelijkheden. Dit tweede concept is deels gebaseerd op een partnership met een evenement; namelijk &lt;em&gt;Sails&lt;/em&gt;. Daar komen veel mensen op af die oude schepen bezoeken en bekijken, precies het onderwerp waar wij ons dus ook mee bezig houden.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*7SAjctmBN9wjIllFnxs5yQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+          </description>
+          <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2017/09/27/mijn-eerste-week-in-de-hoofdfase</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2017/09/27/mijn-eerste-week-in-de-hoofdfase</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+      
+        <item>
+          
+            <title>The 2016 MacBook Pro</title>
+          
+          <author>website@ganzevoort.nl (Colin Ganzevoort — Psychology, Research, & Technology)</author>
+          <description>
+            &lt;p&gt;&lt;strong&gt;Edit 04-10-2016&lt;/strong&gt;: This article was originally written on May 29, 2016. After multiple software updates most of my problems have been fixed and I can’t find many reasons to complain about the computer anymore. I’ve been happy with the machine for a long time and I no need to bring my charger to school, only when I know I’m going to be doing very resource-extensive work like video editing or working in 3D software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*cIiL8cozeKEKvjC35lvM_w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;dropcap&quot;&gt;I bought the new Macbook Pro. It is a 2016 15&quot; base model, in space grey. The machine is good. But it is not really great. For the usual day-to-day tasks it does well enough job; as expected. I enjoy editing video in my spare time and I do this every now and then. The machine handles the footage (which is usually 1080P) just fine without stuttering or any noticeable lag. I edit in Adobe Premiere and Adobe After Effects. Rendering can take a little while and that is when the fans really start to kick in, but that’s fine.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;“The machine is good. But it is not really great.”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*fBlyTgGoUa2J9oNc1crusQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The battery, however, is disappointing. Apple advertises an average battery use of about ten hours. I get no more than six or seven, and that is only when I really pay attention to make sure I don’t use too much power or have too many applications open. The battery is smaller in size and thus relies more on the power efficiency used by applications. Apple’s default applications are pretty well optimised. Third party applications often are not. It’s pretty disappointing.&lt;/p&gt;
+
+&lt;p&gt;The Touch Bar is something people immediately notice when they see my computer. I don’t notice it that much anymore. To be honest, it iss not even very useful. In some applications it has a use that is better than the standard FN keys that it replaced, but in others the touch bar is a waste of space—when nothing of use is displayed. I know of only one single third party that has updated their application to utilise the touch bar: Spotify, which I personally don’t even use. Surely enough this will get better in the future, though.&lt;/p&gt;
+
+&lt;p&gt;Keys on the new Macbook Pro are different, too. They use the newer butterfly mechanism and a version two of it. The keys have very little travel but I actually like that a lot. Many people do have problems with these keyboard, though. When the machine gets hot the keys will often be too ‘clicky’ and not feel right. It’s really annoying. And yet another moment, the keys will not be clicky at all and rather feel very ‘mushy’. This happens a few times per month and it’ll often take a few days to get better again. It happens because there is very little space between the keys and any dust particle that gets in between will be a cause of problems. Generally the keys are great and I love typing on the butterfly mechanism keyboard—as long as they are not clicky and not mushy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*gvR7FkZxASN19jkzBUey7A.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;figcaption class=&quot;imageCaption&quot;&gt;Traditional scissor mechanism vs. Apple’s butterfly mechanism&lt;/figcaption&gt;
+
+&lt;p&gt;Another controversial topic is the I/O situation. I have four Thunderbolt 3, USB Type-C ports. The ports and protocols regarding USB-C is really confusing and I have to be very careful not to buy accessories that might not be compatible with my Mac. It’s confusing, but admittedly also really cool, especially with the ability to charge from any of the four ports. With a USB-C dongle, I can also plug in one single cable to be instantly connected to my ethernet cable, various USB devices including an external hard drive, and an external monitor. Amazing. I don’t mind the new ports, they’re cool.&lt;/p&gt;
+
+&lt;p&gt;Still, I remain unsure of whether I am completely satisfied with the purchase. I have had a lot of trouble with this computer, which led to multiple appointments in an Apple Store (which is three hours of commuting!) and numerous chats with Apple Support about minor, stupid issues. But it is still a powerful machine that can get work done, and that is what I have it for. At this moment this is the most capable portable Mac computer and that is exactly what I need.&lt;/p&gt;
+
+          </description>
+          <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
+          <link>https://colinganzevoort.nl/blog/2016/05/29/the-2016-macbook-pro</link>
+          <guid isPermaLink="true">https://colinganzevoort.nl/blog/2016/05/29/the-2016-macbook-pro</guid>
+          
+          
+          <category>blog</category>
+          
+        </item>
+      
+    
+  </channel>
+</rss>

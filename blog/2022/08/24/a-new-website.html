@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Colin Ganzevoort — Psychology, Research, & Technology &mdash; A new website</title>
+
+    <meta name="description" content="I am a Research Master student at the University of Groningen (RUG), specialising in Mental Health and Clinical Psychology. Find more details about me and my work on this website.">
+
+    <link rel="stylesheet" href="https://colinganzevoort.nl/assets/css/main.css?1697392978041648337">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+
+    <link rel="favicon" href="/assets/images/icon-512.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" /><script async defer data-website-id="c3f89d49-ef3d-4d13-868f-a4a457433514" src="https://umami.colinganzevoort.nl/script.js"></script></head>
+  <body>
+
+    
+  
+
+
+  <nav class="site-navigation" role="navigation">
+    <ul>
+      <li>
+        <a href="/">
+          Home
+        </a>
+      </li>
+    
+      <li >
+        
+          <a href="/work">
+            Work
+          </a>
+        
+      </li>
+    
+      <li >
+        
+          <a href="/cv">
+            CV
+          </a>
+        
+      </li>
+    
+      <li >
+        
+          <a href="/blog">
+            Blog
+          </a>
+        
+      </li>
+    
+    </ul>
+  </nav>
+
+
+
+
+<article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
+
+  
+    <h1 class="post-title divided p-name" itemprop="name headline">
+      A new website
+
+      <!-- https://excessivelyadequate.com/posts/ert.html -->
+      <center><small><small><small><span class="ert">
+        Reading time:
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        2 minutes
+    </span></small></small></small></center>
+
+    </h1>
+  
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p class="dropcap">Hello! If you're reading this, you probably found my new website. Although I've had my domain name for many years now, I really only used it for my custom e-mail. I did have a server running somewhere to display a very simple web page, but it contained no more than two words and a hyperlink to my LinkedIn profile.</p>
+
+<p>Since <a href="/blog/2022/03/15/transforming-a-university-pc-to-my-new-homelab">I got a new homelab just months ago</a>, I have entertained the thought of making a new website for myself, that could serve as an extension of my professional CV, but also as a personal blog (<a href="https://twitter.com/PatrickBloniasz/status/1553767390109962240" target="_blank">Why have a personal website in the first place? See this excellent Twitter thread</a>). I have previously experimented with some blog writing, though I never did have a good platform to publish them. Before building the website, however, I had to decide for myself what kind of website I wanted and which tools would best suit my needs. There were several options that I could go with.</p>
+
+<p>First, I considered going with <a href="https://wordpress.org/" target="_blank">Wordpress</a>. <a href="https://dezeilmakerij.frl/" target="_blank">I have built a Wordpress website before for a client</a>, and knew of its customisability with different themes and plugins. However, Wordpress seems to be quickly losing its charm, due to its <a href="https://www.makeuseof.com/is-wordpress-still-worth-using/" target="_blank">heavy use of resources and the status that it has gained as an outdated software that is frequently targeted by hackers</a>. I am also not at very familiar with PHP and found it difficult to customise plugins and themes themselves in order to get the rather specific result that I was often looking for.</p>
+
+<p>Then, I considered <a href="https://ghost.org/" target="_blank">Ghost</a> as alternative, as I had heard much about it and it seemed a lot more modern, secure and fast than Wordpress. It is also a platform that is inherently dedicated to blogging and growing your audience. Getting Ghost up and running on my own server was however not as easy I had hoped. Immediately, the install process was finicky, and I did not like that I needed a separate Docker container for the (rather resource-heavy) MySQL database. With the limited resources that my homelab currently has, I need to make conscious decisions about the applications that I do and do not want to run.</p>
+
+<p><img src="/assets/images/Screenshot-ghost-db-resources.png" alt="Ghost resource usage" /></p>
+<figcaption>The Ghost database is one of the most resource-intensive containers on my system</figcaption>
+
+<p>Next, I found some information about <a href="https://www.cloudflare.com/en-gb/learning/performance/static-site-generator/" target="_blank">Static Site Generators</a>. This was perfect and exactly what I was looking for. No databases, no comments; only super-fast performance, whilst still allowing for themes, plugins, and customisation, and still not requiring me to code each and every page individually. <em>The static site generator truly does feel like the best of both worlds.</em></p>
+
+<p>I ended up having to decide between two last options: Hugo and Jekyll. <a href="https://gohugo.io/" target="_blank">Hugo</a> is the newer of the two, whereas <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> has existed since 2008 (that’s 14 years!). Both offer themes and plugins, and they work in similar ways. The choice between these two did not seem to matter much, although Hugo is said to have a slightly steeper learning curve. I was initially looking to proceed with Hugo, as it is more modern and faster than Jekyll, but I found a beautiful theme that was only available for Jekyll.</p>
+
+<hr />
+
+<p>And so, the current website is powered by Jekyll, combined with the <a href="https://github.com/patdryburgh/hitchens" target="_blank">Hitchens theme</a> and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>. I modified the theme heavily to my likings: I changed the colour scheme, I added an automatic dark mode, I added my own footer with social links, I customised the home page to contain the bulk of the information, added drop caps, and much more. It took upwards of a week to completely build the website, but I am very satisfied with the end product. <em>And the best thing is</em>: it’s blazing fast, because it’s all just static HTML and CSS. Without any databases and without hogging any resources on my personal server.</p>
+
+  </div>
+
+  <div class="post-meta">
+    
+      <div itemprop="author">Colin Ganzevoort</div>
+    
+    <time class="post-date dt-published" datetime="2022-08-24T00:00:00+00:00" itemprop="datePublished">August 24, 2022</time>
+  </div>
+
+  <!-- https://www.bytedude.com/jekyll-previous-and-next-posts/ -->
+  <div class="post-nav">
+  <p>
+    
+    <a href="/blog/2022/03/15/transforming-a-university-pc-to-my-new-homelab">&#8672;&nbsp;Transforming a university PC to my new homelab</a>
+    
+  </p>
+  <p>
+    
+  </p>
+</div>
+
+  
+
+</article>
+
+
+      
+
+    
+
+
+  <nav class="site-navigation" role="navigation">
+    <ul>
+      <li>
+        <a href="/">
+          Home
+        </a>
+      </li>
+    
+      <li >
+        
+          <a href="/work">
+            Work
+          </a>
+        
+      </li>
+    
+      <li >
+        
+          <a href="/cv">
+            CV
+          </a>
+        
+      </li>
+    
+      <li >
+        
+          <a href="/blog">
+            Blog
+          </a>
+        
+      </li>
+    
+    </ul>
+  </nav>
+
+
+
+    
+
+    <aside class="site-credits">
+      <p>
+        <small>
+
+
+  <ul class="row">
+  </ul>
+
+<div class="row">
+    <a href="mailto:%77%65%62%73%69%74%65@%67%61%6E%7A%65%76%6F%6F%72%74.%6E%6C" data-umami-event="Send mail"><picture>
+      <source srcset="/assets/images/icon-mail-darkmode.png" media="(prefers-color-scheme: dark)">
+        <img src="/assets/images/icon-mail.png" alt="Mail" width="25" height="25">
+    </picture></a>
+
+    <a href="https://www.linkedin.com/in/colinganzevoort/" target="_blank" data-umami-event="Open LinkedIn"><picture>
+      <source srcset="/assets/images/icon-linkedin-darkmode.png" media="(prefers-color-scheme: dark)">
+        <img src="/assets/images/icon-linkedin.png" alt="LinkedIn" width="25" height="25">
+    </picture></a>
+
+    <a rel="me" href="https://noc.social/@colin" target="_blank" data-umami-event="Open Mastodon"><picture>
+      <source srcset="/assets/images/icon-mastodon-darkmode.png" media="(prefers-color-scheme: dark)">
+        <img src="/assets/images/icon-mastodon.png" alt="Twitter" width="25" height="25">
+    </picture></a>
+
+    <a href="https://twitter.com/colinowg/" target="_blank" data-umami-event="Open Twitter"><picture>
+      <source srcset="/assets/images/icon-twitter-darkmode.png" media="(prefers-color-scheme: dark)">
+        <img src="/assets/images/icon-twitter.png" alt="Twitter" width="25" height="25">
+    </picture></a>
+ </div>
+
+©
+<script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>
+
+Colin Ganzevoort
+
+</small>
+
+      </p>
+    </aside>
+
+
+  </body>
+</html>
